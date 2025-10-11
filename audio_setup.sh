@@ -2,6 +2,13 @@
 
 echo "Installing audio drivers."
 
-pacman -S pipewire wireplumber pipewire-audio pipewire-pulse pipewire-alsa pipewire-media-session
+packages=(
+pipewire
+wireplumber
+pipewire-audio
+pipewire-pulse
+)
+
+./utils/install_packages.sh "${packages[@]}"
 
 systemctl --user enable --now pipewire pipewire-pulse wireplumber

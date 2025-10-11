@@ -27,4 +27,3 @@ echo -e "[Match]\nName=$DEVICE\n\n[Network]\nDHCP=yes" >  $SYSTEMD_PATH
 systemctl restart systemd-networkd
 systemctl restart systemd-resolved
 ip link set $DEVICE up
-

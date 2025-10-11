@@ -2,6 +2,25 @@
 
 echo "Installing basic packages"
 
-pacman -S vi vim nano sudo git base-devel fastfetch
+terminal_packages=(
+vi
+vim
+neovim
+nano
+sudo
+code
+git
+base-devel
+fastfetch
+htop
+unzip
+wget
+)
 
-# base-devel - packages like 'gcc'
+gui_packages=(
+firefox
+kitty
+)
+
+./utils/install_packages.sh "${terminal_packages[@]}"
+./utils/install_packages.sh "${gui_packages[@]}"
