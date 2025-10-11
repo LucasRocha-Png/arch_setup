@@ -2,8 +2,6 @@
 
 echo "Installing basic packages"
 
-pacman -S vi vim nano sudo iwd dhcpcd git base-devel networkmanager fastfetch
+pacman -S vi vim nano sudo git base-devel fastfetch
 
-# iwd - WIFI
-# dhcpcd - DHCP client
 # base-devel - packages like 'gcc'

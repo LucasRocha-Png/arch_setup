@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "Adding user..."
-echo "Type user name:"
-read USERNAME
+read -p "Write new username: " USERNAME
 
 useradd -m $USERNAME
 passwd $USERNAME
