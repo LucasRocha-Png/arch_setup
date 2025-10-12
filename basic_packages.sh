@@ -2,7 +2,7 @@
 
 echo "Installing basic packages"
 
-terminal_packages=(
+packages=(
 vi
 vim
 neovim
@@ -15,12 +15,10 @@ fastfetch
 htop
 unzip
 wget
-)
-
-gui_packages=(
+zsh
 firefox
-kitty
 )
 
-./utils/install_packages.sh "${terminal_packages[@]}"
-./utils/install_packages.sh "${gui_packages[@]}"
+
+./utils/install_packages.sh "${packages[@]}"
+

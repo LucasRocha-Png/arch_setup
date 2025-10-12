@@ -13,9 +13,7 @@ blueman
 
 ./utils/install_packages.sh "${packages[@]}"
 
-systemctl enable --now bluetooth
-systemctl enable --now NetworkManager
-systemctl enable --now iwd
+systemctl enable --now bluetooth NetworkManager iwd dhcpcd
 
 
 # iwd - WiFI
