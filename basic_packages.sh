@@ -19,8 +19,8 @@ stow
 wget
 zsh
 dex
+npm
+nodejs
 )
 
-
 ./utils/install_packages.sh "${packages[@]}"
-
