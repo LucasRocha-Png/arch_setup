@@ -9,6 +9,7 @@ iwd
 bluez
 bluez-utils
 blueman
+pavucontrol
 )
 
 ./utils/install_packages.sh "${packages[@]}"

@@ -13,10 +13,15 @@ git
 base-devel
 fastfetch
 htop
+btop
 unzip
 wget
 zsh
+vlc
+file-roller
+discord
 firefox
+playerctl
 )
 
 

@@ -10,11 +10,21 @@ i3status
 lightdm
 lightdm-gtk-greeter
 polybar
-rofi
+dmenu
 picom
 feh
 nemo
-lxappearance
+lxappearance 
+brightnessctl
+maim
+xclip
+
+merkuro
+vlc
+file-roller
+discord
+firefox
+playerctl
 )
 
 ./utils/install_packages.sh "${packages[@]}"
