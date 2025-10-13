@@ -7,24 +7,25 @@ xorg-apps
 i3-wm
 i3lock
 i3status
-lightdm
-lightdm-gtk-greeter
+ly
 polybar
 dmenu
 picom
 feh
 nemo
-lxappearance 
 brightnessctl
 maim
 xclip
-
-merkuro
 vlc
-file-roller
+ark
+merkuro
 discord
 firefox
 playerctl
+gnome-calendar
+qcalculate-gtk
+gnome-clock
 )
 
 ./utils/install_packages.sh "${packages[@]}"
+sudo systemctl enable --now ly

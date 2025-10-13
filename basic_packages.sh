@@ -15,13 +15,9 @@ fastfetch
 htop
 btop
 unzip
+stow
 wget
 zsh
-vlc
-file-roller
-discord
-firefox
-playerctl
 )
 
 
