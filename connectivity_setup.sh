@@ -4,6 +4,7 @@ echo "Installing networking and bluetooth drivers."
 
 packages=(
 networkmanager
+network-manager-applet
 dhcpcd
 iwd
 bluez

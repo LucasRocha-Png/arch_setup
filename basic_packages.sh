@@ -18,6 +18,7 @@ unzip
 stow
 wget
 zsh
+dex
 )
 
 

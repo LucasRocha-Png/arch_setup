@@ -8,6 +8,7 @@ i3-wm
 i3lock
 i3status
 ly
+dunst
 polybar
 dmenu
 picom
