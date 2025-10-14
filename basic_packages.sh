@@ -21,6 +21,9 @@ zsh
 dex
 npm
 nodejs
+tmux
+power-profiles-daemon
 )
 
 ./utils/install_packages.sh "${packages[@]}"
+sudo systemctl enable --now power-profiles-daemon

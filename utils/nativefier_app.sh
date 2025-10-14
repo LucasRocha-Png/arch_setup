@@ -14,6 +14,11 @@ INSTALL_DIR="$HOME/.local/share/$APP_NAME"
 DESKTOP_DIR="$HOME/.local/share/applications"
 DESKTOP_FILE="$DESKTOP_DIR/$APP_NAME.desktop"
 
+if [ -d "$INSTALL_DIR" ]; then
+    echo "App already exists."
+    exit 1
+fi
+
 # Cria o app com Nativefier
 echo "Creating $APP_NAME with Nativefier..."
 nativefier "$URL" --name "$APP_NAME" --icon "$ICON_PATH" --overwrite
@@ -23,14 +28,6 @@ BUILD_DIR="${APP_NAME}-linux-x64"
 # Verifica se a build foi criada
 if [ ! -d "$BUILD_DIR" ]; then
     echo "Error: Build folder $BUILD_DIR not found."
-    exit 1
-fi
-
-# Remove instalação anterior, se existir
-if [ -d "$INSTALL_DIR" ]; then
-    echo "App already exists."
-    #rm -rf "$INSTALL_DIR"
-    rm -rf "$BUILD_DIR"
     exit 1
 fi
 
