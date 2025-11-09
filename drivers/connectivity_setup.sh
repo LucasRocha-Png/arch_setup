@@ -13,7 +13,7 @@ blueman
 pavucontrol
 )
 
-./utils/install_packages.sh "${packages[@]}"
+../utils/pacman_ip.sh "${packages[@]}"
 
 systemctl enable --now bluetooth NetworkManager iwd dhcpcd
 

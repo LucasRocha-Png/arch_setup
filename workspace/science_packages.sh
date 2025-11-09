@@ -2,7 +2,7 @@
 
 echo "Installing science packages"
 
-packages=(
+pacman_packages=(
 okular
 libreoffice-still
 texstudio
@@ -22,7 +22,12 @@ maxima
 ngspice # Circuit Simulator
 )
 
-./utils/install_packages.sh "${packages[@]}"
+yay_packages={
+qucs-s 
+zotero
+}
 
-yay -S --needed --noconfirm qucs-s # Circuit Simulator
-yay -S --needed --noconfirm zotero
+../utils/pacman_ip.sh "${pacman_packages[@]}"
+../utils/yay_ip.sh "${yay_packages[@]}"
+
+

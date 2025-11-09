@@ -6,4 +6,4 @@ nvidia-utils
 nvidia-settings
 )
 
-./utils/install_packages.sh "${packages[@]}"
+../utils/pacman_ip.sh "${packages[@]}"

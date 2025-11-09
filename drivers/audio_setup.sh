@@ -9,6 +9,6 @@ pipewire-audio
 pipewire-pulse
 )
 
-./utils/install_packages.sh "${packages[@]}"
+../utils/pacman_ip.sh "${packages[@]}"
 
 systemctl --user enable --now pipewire pipewire-pulse wireplumber

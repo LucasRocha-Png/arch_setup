@@ -5,7 +5,7 @@ git
 openssh
 )
 
-./utils/install_packages.sh "${packages[@]}"
+../utils/pacman_ip.sh "${packages[@]}"
 sudo systemctl enable --now sshd
 
 read -p "Type your name: " NAME

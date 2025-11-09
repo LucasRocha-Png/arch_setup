@@ -6,4 +6,4 @@ xf86-video-amdgpu
 mesa
 )
 
-./utils/install_packages.sh "${packages[@]}"
+../utils/pacman_ip.sh "${packages[@]}"

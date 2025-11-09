@@ -11,6 +11,7 @@ i3_packages=(
   i3lock
   i3status
   dmenu
+  rofi
   polybar
   picom
   dunst
@@ -44,11 +45,22 @@ login_manager=(
   ly
 )
 
-./utils/install_packages.sh "${base_packages[@]}"
-./utils/install_packages.sh "${i3_packages[@]}"
-./utils/install_packages.sh "${utils_packages[@]}"
-./utils/install_packages.sh "${multimedia_packages[@]}"
-./utils/install_packages.sh "${graphics_packages[@]}"
-./utils/install_packages.sh "${login_manager[@]}"
+pacman_fonts=(
+  noto-fonts-emoji   
+  ttf-fira-code
+)
+
+yay_fonts={
+  apple_fonts
+}
+
+../utils/pacman_ip.sh "${base_packages[@]}"
+../utils/pacman_ip.sh "${i3_packages[@]}"
+../utils/pacman_ip.sh "${utils_packages[@]}"
+../utils/pacman_ip.sh "${multimedia_packages[@]}"
+../utils/pacman_ip.sh "${graphics_packages[@]}"
+../utils/pacman_ip.sh "${login_manager[@]}"
+../utils/pacman_ip.sh "${pacman_fonts[@]}"
+../utils/yay_ip.sh "${yay_fonts[@]}"
 
 sudo systemctl enable --now ly
