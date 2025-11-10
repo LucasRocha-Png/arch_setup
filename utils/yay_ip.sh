@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo yay -Sy --noconfirm
-sudo yay -S --needed --noconfirm "$@"
+yay -Sy --noconfirm
+yay -S --needed --noconfirm "$@"

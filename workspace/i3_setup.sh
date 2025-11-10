@@ -28,6 +28,7 @@ utils_packages=(
   qalculate-gtk        # Calculadora científica
   gnome-calendar       # Calendário
   gnome-clocks         # Relógio e temporizador
+  
 )
 
 multimedia_packages=(
@@ -35,10 +36,23 @@ multimedia_packages=(
   firefox
   discord
   obs-studio
+  inkscape
+  gimp
+  audiacity
+  kdenlive
 )
 
 graphics_packages=(
-  inkscape
+  lxappearance
+  gnome-tweaks
+  gnome-themes-extra
+  kde-gtk-config
+)
+
+graphics_packages_yay=(
+  gnome-themes-extra-gtk2
+  adwaita-qt5-git
+  adwaita-qt6-git
 )
 
 login_manager=(
@@ -48,11 +62,9 @@ login_manager=(
 pacman_fonts=(
   noto-fonts-emoji   
   ttf-fira-code
+  ttf-firacode-nerd
+  ttf-hack-nerd
 )
-
-yay_fonts={
-  apple_fonts
-}
 
 ../utils/pacman_ip.sh "${base_packages[@]}"
 ../utils/pacman_ip.sh "${i3_packages[@]}"
@@ -61,6 +73,9 @@ yay_fonts={
 ../utils/pacman_ip.sh "${graphics_packages[@]}"
 ../utils/pacman_ip.sh "${login_manager[@]}"
 ../utils/pacman_ip.sh "${pacman_fonts[@]}"
-../utils/yay_ip.sh "${yay_fonts[@]}"
+../utils/yay_ip.sh "${graphics_packages_yay[@]}"
 
 sudo systemctl enable --now ly
+GTK_THEME=Adwaita:dark
+GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+QT_STYLE_OVERRIDE=Adwaita-Dark
