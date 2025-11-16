@@ -39,8 +39,8 @@ python-matplotlib
 python-sympy 
 python-scikit-learn 
 python-seaborn
-python-jupyter-notebook 
-python-jupyterlab 
+jupyter-notebook 
+jupyterlab 
 python-altair
 python-tensorflow 
 python-torch 
@@ -48,7 +48,9 @@ python-torchvision
 )
 
 yay_code=(
-    wireshark-git 
+    wireshark-git
+    python-pytorch 
+    python-keras
 )
 ../utils/pacman_ip.sh "${code_apps[@]}"
 ../utils/yay_ip.sh "${yay_code[@]}"
@@ -62,6 +64,7 @@ gnuplot
 
 yay_math=(
 scilab-bin
+openmodelica
 sagemath
 )
 ../utils/yay_ip.sh "${yay_math[@]}"
@@ -70,6 +73,7 @@ sagemath
 
 td_modeling=(
 freecad
+librecad
 )
 
 yay_td_modeling=(
@@ -82,12 +86,16 @@ mechanics=(
     gcc 
     gcc-fortran
     yaml-cpp
+    paraview
+    avogadro2-bin
 )
 
 yay_mechanics=(
     calculix-cgx
     calculix-ccx
     openfoam-org 
+    gmsh
+    cantera-git
 )
 ../utils/pacman_ip.sh "${mechanics[@]}"
 ../utils/yay_ip.sh "${yay_mechanics[@]}"
@@ -98,6 +106,7 @@ ngspice
 kicad
 ghidra
 rizin
+gnuradio
 )
 
 yay_eletrical=(
@@ -118,6 +127,16 @@ yay_connectivity=(
 )
 ../utils/pacman_ip.sh "${connectivity[@]}"
 ../utils/yay_ip.sh "${yay_connectivity[@]}"
+
+
+geography=(
+stellarium
+marble
+gnome-maps
+kstars
+)
+
+../utils/pacman_ip.sh "${geography[@]}"
 
 
 #yay_automation=(

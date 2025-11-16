@@ -28,11 +28,14 @@ utils_packages=(
   qalculate-gtk        # Calculadora científica
   gnome-calendar       # Calendário
   gnome-clocks         # Relógio e temporizador
-  
+  wine
 )
 
 multimedia_packages=(
   vlc
+  vlc-plugin-ffmpeg 
+  vlc-plugin-x265 
+  ffmpeg 
   firefox
   discord
   obs-studio
@@ -40,10 +43,16 @@ multimedia_packages=(
   gimp
   audiacity
   kdenlive
+  shotwell
+)
+
+yay_multimedia_packages=(
+  pamac
 )
 
 graphics_packages=(
   lxappearance
+  kvantum
   gnome-tweaks
   gnome-themes-extra
   kde-gtk-config
@@ -74,6 +83,7 @@ pacman_fonts=(
 ../utils/pacman_ip.sh "${login_manager[@]}"
 ../utils/pacman_ip.sh "${pacman_fonts[@]}"
 ../utils/yay_ip.sh "${graphics_packages_yay[@]}"
+../utils/yay_ip.sh "${yay_multimedia_packages[@]}"
 
 sudo systemctl enable --now ly
 GTK_THEME=Adwaita:dark

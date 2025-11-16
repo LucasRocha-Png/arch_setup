@@ -11,13 +11,23 @@ bluez
 bluez-utils
 blueman
 pavucontrol
+usbutils
+gvfs-mtp 
+gvfs-gphoto2 
+gphoto2
+proton-vpn-gtk-app
+print-manager 
+system-config-printer
+hplip
+cups
+sane
+simple-scan
+polkit-gnome
+android-tools
 )
+
 
 ../utils/pacman_ip.sh "${packages[@]}"
 
-systemctl enable --now bluetooth NetworkManager iwd dhcpcd
-
-
-# iwd - WiFI
-# bluez - Bluetooth
-# dhcpcd -  Used to assingning IP addresses to a device on a network.
+sudo systemctl enable --now bluetooth NetworkManager iwd dhcpcd cups.service
+echo "Run hp-plugin to configure your printer"
