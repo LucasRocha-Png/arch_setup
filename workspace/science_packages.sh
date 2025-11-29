@@ -77,7 +77,7 @@ librecad
 )
 
 yay_td_modeling=(
-orca-slicer 
+prusa-slicer 
 )
 ../utils/pacman_ip.sh "${td_modeling[@]}"
 ../utils/yay_ip.sh "${yay_td_modeling[@]}"

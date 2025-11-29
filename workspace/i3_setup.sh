@@ -31,6 +31,10 @@ utils_packages=(
   wine
 )
 
+yay_utils_packages=(
+  autotiling  
+)
+
 multimedia_packages=(
   vlc
   vlc-plugin-ffmpeg 
@@ -78,6 +82,7 @@ pacman_fonts=(
 ../utils/pacman_ip.sh "${base_packages[@]}"
 ../utils/pacman_ip.sh "${i3_packages[@]}"
 ../utils/pacman_ip.sh "${utils_packages[@]}"
+../utils/yay_ip.sh "${yay_utils_packages[@]}"
 ../utils/pacman_ip.sh "${multimedia_packages[@]}"
 ../utils/pacman_ip.sh "${graphics_packages[@]}"
 ../utils/pacman_ip.sh "${login_manager[@]}"

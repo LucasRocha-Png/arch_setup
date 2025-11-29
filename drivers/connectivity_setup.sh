@@ -12,6 +12,11 @@ bluez-utils
 blueman
 pavucontrol
 usbutils
+udisks2
+udiskie
+dosfstools
+ntfs-3g 
+exfatprogs
 gvfs-mtp 
 gvfs-gphoto2 
 gphoto2

@@ -23,6 +23,7 @@ npm
 nodejs
 tmux
 power-profiles-daemon
+flatpak
 )
 
 ./utils/pacman_ip.sh "${packages[@]}"
