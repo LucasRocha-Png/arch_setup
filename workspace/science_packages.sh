@@ -29,6 +29,7 @@ jupyter-notebook
 imhex
 gtkwave
 ghdl
+iverilog
 sigrok-cli
 jupyterlab
 code
@@ -113,6 +114,12 @@ yay_eletrical=(
 qucs-s
 pulseview 
 openems
+quartus-free
+modelsim
+stm32cubemx
+stm32cubeide
+stm32cubeprog
+stm32flash
 )
 
 ../utils/pacman_ip.sh "${eletrical[@]}"

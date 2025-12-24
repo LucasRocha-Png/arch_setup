@@ -7,6 +7,8 @@ pipewire
 wireplumber
 pipewire-audio
 pipewire-pulse
+easyeffects 
+lsp-plugins
 )
 
 ../utils/pacman_ip.sh "${packages[@]}"

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 packages=(
-nvidia
-nvidia-utils
-nvidia-settings
+nvidia-580xx-dkms 
+nvidia-580xx-utils 
+lib32-nvidia-580xx-utils
 )
 
-../utils/pacman_ip.sh "${packages[@]}"
+../utils/yay_ip.sh "${packages[@]}"
