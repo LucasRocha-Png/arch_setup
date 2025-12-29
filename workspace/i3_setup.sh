@@ -26,13 +26,13 @@ utils_packages=(
   playerctl            # Controle de mídia
   ark                  # Compactação/descompactação
   qalculate-gtk        # Calculadora científica
-  gnome-calendar       # Calendário
-  gnome-clocks         # Relógio e temporizador
+  osmo                 # Calendário
+  evolution
   wine
 )
 
 yay_utils_packages=(
-  autotiling  
+  alarm-clock-applet
 )
 
 multimedia_packages=(
@@ -48,10 +48,12 @@ multimedia_packages=(
   audiacity
   kdenlive
   shotwell
+  gcolor3
+  kcolorchooser
 )
 
 yay_multimedia_packages=(
-  pamac
+  pamac-gtk3
 )
 
 graphics_packages=(
@@ -59,6 +61,8 @@ graphics_packages=(
   kvantum
   gnome-tweaks
   gnome-themes-extra
+  qt5ct
+  qt6ct
   kde-gtk-config
 )
 
@@ -72,11 +76,13 @@ login_manager=(
   ly
 )
 
+
 pacman_fonts=(
   noto-fonts-emoji   
   ttf-fira-code
   ttf-firacode-nerd
   ttf-hack-nerd
+  ttf-terminus-nerd
 )
 
 ../utils/pacman_ip.sh "${base_packages[@]}"

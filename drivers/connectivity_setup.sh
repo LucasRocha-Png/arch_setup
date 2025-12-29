@@ -10,7 +10,7 @@ iwd
 bluez
 bluez-utils
 blueman
-pavucontrol
+pavucontrol-qt
 usbutils
 udisks2
 udiskie
