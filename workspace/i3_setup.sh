@@ -24,7 +24,7 @@ utils_packages=(
   maim                 # Screenshot
   xclip                # Copiar imagem/arquivo
   playerctl            # Controle de mídia
-  ark                  # Compactação/descompactação
+  xarchive                  # Compactação/descompactação
   qalculate-gtk        # Calculadora científica
   osmo                 # Calendário
   evolution
@@ -32,7 +32,9 @@ utils_packages=(
 )
 
 yay_utils_packages=(
+  i3-gnome-pomodoro
   alarm-clock-applet
+  zapzap
 )
 
 multimedia_packages=(
@@ -49,11 +51,12 @@ multimedia_packages=(
   kdenlive
   shotwell
   gcolor3
-  kcolorchooser
+  gnucash
 )
 
 yay_multimedia_packages=(
   pamac-gtk3
+  portifolio
 )
 
 graphics_packages=(

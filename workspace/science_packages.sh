@@ -46,6 +46,7 @@ python-altair
 python-tensorflow 
 python-torch 
 python-torchvision
+zeal
 )
 
 yay_code=(
