@@ -113,6 +113,7 @@ gnuradio
 
 yay_eletrical=(
 qucs-s
+ltspice
 pulseview 
 openems
 quartus-free
