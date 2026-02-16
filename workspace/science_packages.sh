@@ -17,6 +17,7 @@ pandoc
 
 yay_office=(
 zotero
+erpnext
 )
 
 ../utils/pacman_ip.sh "${office[@]}"
@@ -122,13 +123,14 @@ stm32cubemx
 stm32cubeide
 stm32cubeprog
 stm32flash
+wireviz
+gaphor
+qelectrotech
+ktechlab
 )
 
 ../utils/pacman_ip.sh "${eletrical[@]}"
 ../utils/yay_ip.sh "${yay_eletrical[@]}"
-
-connectivity=(
-)
 
 yay_connectivity=(
     qbittorrent
@@ -147,6 +149,9 @@ kstars
 
 ../utils/pacman_ip.sh "${geography[@]}"
 
+company_yay=(
+)
+../utils/yay_ip.sh "${company_yay[@]}"
 
 #yay_automation=(
 #    gazebo
