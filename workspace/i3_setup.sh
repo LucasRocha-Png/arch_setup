@@ -70,6 +70,7 @@ graphics_packages=(
 )
 
 graphics_packages_yay=(
+  themix-full-git
   gnome-themes-extra-gtk2
   adwaita-qt5-git
   adwaita-qt6-git
