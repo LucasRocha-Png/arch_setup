@@ -13,6 +13,7 @@ texlive-fontsextra
 texlive-langportuguese
 planner
 pandoc
+mousepad
 )
 
 yay_office=(
@@ -127,6 +128,7 @@ wireviz
 gaphor
 qelectrotech
 ktechlab
+logisim-evolution-bin
 )
 
 ../utils/pacman_ip.sh "${eletrical[@]}"
