@@ -3,9 +3,8 @@
 echo "Installing science packages"
 
 office=(
-okular
-libreoffice-still
-texstudio
+evince
+enter-tex
 texlive-core
 texlive-bin
 texlive-latexextra
@@ -14,17 +13,25 @@ texlive-langportuguese
 planner
 pandoc
 mousepad
+kruler
+gnome-keyring 
+libsecret
 )
 
 yay_office=(
 zotero
 erpnext
+onlyoffice-bin
+gnome-shell-pomodoro #  0.28.1-2
+gnome-shell-pomodoro-debug #  0.28.1-2
+i3-gnome-pomodoro-git # 1:0.1.0.r92.7fe1895-2
 )
 
 ../utils/pacman_ip.sh "${office[@]}"
 ../utils/yay_ip.sh "${yay_office[@]}"
 
 code_apps=(
+downgrade
 jupyterlab
 python-ipykernel
 jupyter-notebook
@@ -67,9 +74,7 @@ gnuplot
 )
 
 yay_math=(
-scilab-bin
 openmodelica
-sagemath
 )
 ../utils/yay_ip.sh "${yay_math[@]}"
 ../utils/pacman_ip.sh "${math[@]}"
@@ -87,11 +92,11 @@ prusa-slicer
 ../utils/yay_ip.sh "${yay_td_modeling[@]}"
 
 mechanics=(
-    gcc 
-    gcc-fortran
-    yaml-cpp
-    paraview
-    avogadro2-bin
+gcc 
+gcc-fortran
+yaml-cpp
+paraview
+avogadro2-bin
 )
 
 yay_mechanics=(
@@ -117,6 +122,7 @@ yay_eletrical=(
 qucs-s
 ltspice
 pulseview 
+logisim-evolution
 openems
 quartus-free
 modelsim
