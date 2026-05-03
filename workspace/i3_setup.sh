@@ -35,6 +35,7 @@ yay_utils_packages=(
   i3-gnome-pomodoro
   alarm-clock-applet
   zapzap
+  zscroll-git #serve para o polybar
 )
 
 multimedia_packages=(
