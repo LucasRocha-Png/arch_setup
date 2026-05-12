@@ -29,6 +29,8 @@ sane
 simple-scan
 polkit-gnome
 android-tools
+freerdp # Windows <-> Linux
+remmina # Windows <-> Linux
 )
 
 

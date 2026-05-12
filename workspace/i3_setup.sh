@@ -29,6 +29,9 @@ utils_packages=(
   osmo                 # Calendário
   evolution
   wine
+  gnome-keyring 
+  libsecret
+  gnome-disk-utility
 )
 
 yay_utils_packages=(

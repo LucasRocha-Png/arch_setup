@@ -3,65 +3,51 @@
 echo "Installing science packages"
 
 office=(
-evince
-enter-tex
-texlive-core
-texlive-bin
-texlive-latexextra
-texlive-fontsextra
-texlive-langportuguese
-planner
-pandoc
-mousepad
-kruler
-gnome-keyring 
-libsecret
+    evince
+    enter-tex
+    texlive-core
+    texlive-bin
+    texlive-latexextra
+    texlive-fontsextra
+    texlive-langportuguese
+    planner
+    pandoc
+    mousepad
+    kruler
 )
 
 yay_office=(
-zotero
-erpnext
-onlyoffice-bin
-gnome-shell-pomodoro #  0.28.1-2
-gnome-shell-pomodoro-debug #  0.28.1-2
-i3-gnome-pomodoro-git # 1:0.1.0.r92.7fe1895-2
+    zotero
+    erpnext
+    onlyoffice-bin
+    gnome-shell-pomodoro #  0.28.1-2
+    gnome-shell-pomodoro-debug #  0.28.1-2
+    i3-gnome-pomodoro-git # 1:0.1.0.r92.7fe1895-2
 )
 
 ../utils/pacman_ip.sh "${office[@]}"
 ../utils/yay_ip.sh "${yay_office[@]}"
 
 code_apps=(
-downgrade
-jupyterlab
-python-ipykernel
-jupyter-notebook
-imhex
-gtkwave
-ghdl
-iverilog
-sigrok-cli
-jupyterlab
-code
-python-numpy 
-python-scipy 
-python-pandas 
-python-matplotlib
-python-sympy 
-python-scikit-learn 
-python-seaborn
-jupyter-notebook 
-jupyterlab 
-python-altair
-python-tensorflow 
-python-torch 
-python-torchvision
-zeal
+    downgrade
+    jupyterlab
+    python-ipykernel
+    imhex
+    gtkwave
+    ghdl
+    iverilog
+    sigrok-cli
+    jupyterlab
+    code
+    python-seaborn
+    jupyter-notebook 
+    jupyterlab 
+    zeal
+    visidata
 )
 
 yay_code=(
     wireshark-git
-    python-pytorch 
-    python-keras
 )
 ../utils/pacman_ip.sh "${code_apps[@]}"
 ../utils/yay_ip.sh "${yay_code[@]}"
@@ -92,11 +78,11 @@ prusa-slicer
 ../utils/yay_ip.sh "${yay_td_modeling[@]}"
 
 mechanics=(
-gcc 
-gcc-fortran
-yaml-cpp
-paraview
-avogadro2-bin
+    gcc 
+    gcc-fortran
+    yaml-cpp
+    paraview
+    avogadro2-bin
 )
 
 yay_mechanics=(
@@ -111,30 +97,30 @@ yay_mechanics=(
 
 
 eletrical=(
-ngspice
-kicad
-ghidra
-rizin
-gnuradio
+    ngspice
+    kicad
+    ghidra
+    rizin
+    gnuradio
 )
 
 yay_eletrical=(
-qucs-s
-ltspice
-pulseview 
-logisim-evolution
-openems
-quartus-free
-modelsim
-stm32cubemx
-stm32cubeide
-stm32cubeprog
-stm32flash
-wireviz
-gaphor
-qelectrotech
-ktechlab
-logisim-evolution-bin
+    qucs-s
+    ltspice
+    pulseview 
+    logisim-evolution
+    openems
+    quartus-free
+    modelsim
+    stm32cubemx
+    stm32cubeide
+    stm32cubeprog
+    stm32flash
+    wireviz
+    gaphor
+    qelectrotech
+    ktechlab
+    logisim-evolution-bin
 )
 
 ../utils/pacman_ip.sh "${eletrical[@]}"
@@ -149,10 +135,10 @@ yay_connectivity=(
 
 
 geography=(
-stellarium
-marble
-gnome-maps
-kstars
+    stellarium
+    marble
+    gnome-maps
+    kstars
 )
 
 ../utils/pacman_ip.sh "${geography[@]}"

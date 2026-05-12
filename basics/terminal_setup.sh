@@ -4,6 +4,7 @@ packages=(
 kitty
 zsh
 exa
+fortune-mod
 )
 
 ../utils/pacman_ip.sh "${packages[@]}"
