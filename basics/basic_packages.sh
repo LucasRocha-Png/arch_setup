@@ -25,6 +25,7 @@ tmux
 power-profiles-daemon
 flatpak
 locate
+tealdeer
 )
 
 ./utils/pacman_ip.sh "${packages[@]}"
