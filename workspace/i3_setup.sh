@@ -21,6 +21,7 @@ i3_packages=(
 utils_packages=(
   feh                  # Imagens / wallpaper
   nemo                 # Gerenciador de arquivos
+  yazi
   maim                 # Screenshot
   xclip                # Copiar imagem/arquivo
   playerctl            # Controle de mídia
