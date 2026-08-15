@@ -14,6 +14,7 @@ office=(
     pandoc
     mousepad
     kruler
+    minder # 1.17
 )
 
 yay_office=(

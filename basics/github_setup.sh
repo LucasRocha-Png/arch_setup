@@ -1,11 +1,19 @@
 #!/bin/bash
 
 packages=(
-git
-openssh
+	git
+	openssh
+	lazygit
+	npm
 )
 
+yay_packages={
+	gitflow-avh
+}
+
 ../utils/pacman_ip.sh "${packages[@]}"
+../utils/yay_ip.sh "${yay_packages[@]}"
+
 sudo systemctl enable --now sshd
 
 read -p "Type your name: " NAME
