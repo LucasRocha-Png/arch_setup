@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define o IP do seu celular (Deixe configurado para quando o Wi-Fi estiver disponível)
-CELULAR_IP="192.168.4.12:5555"
+CELULAR_IP="192.168.4.7:5555"
 
 echo "🧹 Limpando instâncias e dispositivos virtuais antigos..."
 killall -q scrcpy 2>/dev/null
