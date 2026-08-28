@@ -19,7 +19,6 @@ office=(
 
 yay_office=(
     zotero
-    erpnext
     onlyoffice-bin
     gnome-shell-pomodoro #  0.28.1-2
     gnome-shell-pomodoro-debug #  0.28.1-2

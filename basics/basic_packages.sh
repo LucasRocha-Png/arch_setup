@@ -26,6 +26,7 @@ power-profiles-daemon
 flatpak
 locate
 tealdeer
+man-pages
 )
 
 ./utils/pacman_ip.sh "${packages[@]}"
